@@ -1,0 +1,130 @@
+MakePath[.obj] = ".\obj"
+.PRG.OBJ:
+   CLIPPER $< /n /A /m /w /es2 /O$@ /I.\include  >mon.pre
+  
+
+mon.obj       : mon.prg .\include\mon.ch .\include\bases.ch
+baseaccn.obj  : baseaccn.prg .\include\mon.ch
+baseclie.obj  : baseclie.prg .\include\mon.ch
+basesums.obj  : basesums.prg .\include\mon.ch
+baseconf.obj  : baseconf.prg .\include\mon.ch  .\include\tools.ch
+baseordt.obj  : baseordt.prg .\include\mon.ch
+basewisc.obj  : basewisc.prg .\include\mon.ch
+basevidu.obj  : basevidu.prg .\include\mon.ch
+basecard.obj  : basecard.prg .\include\mon.ch
+basetrst.obj  : basetrst.prg .\include\mon.ch
+basemodm.obj  : basemodm.prg .\include\mon.ch
+basecred.obj  : basecred.prg .\include\mon.ch
+baseserv.obj  : baseserv.prg .\include\mon.ch
+basepetc.obj  : basepetc.prg .\include\mon.ch
+basepaym.obj  : basepaym.prg .\include\mon.ch
+baseogsz.obj  : baseogsz.prg .\include\mon.ch
+basetick.obj  : basetick.prg .\include\mon.ch
+
+sumsstrn.obj  : sumsstrn.prg .\include\mon.ch
+cardpaym.obj  : cardpaym.prg .\include\mon.ch
+basechck.obj  : basechck.prg .\include\mon.ch
+
+penshome.obj  : penshome.prg .\include\mon.ch
+pensgive.obj  : pensgive.prg .\include\mon.ch
+pens_lib.obj  : pens_lib.prg .\include\mon.ch
+
+tempPrep.obj  : tempPrep.prg .\include\mon.ch
+
+kassoper.obj  : kassoper.prg .\include\mon.ch
+
+
+foot_brw.obj  : foot_brw.prg
+browse.obj    : browse.prg
+browseUp.obj  : browseUp.prg
+ctoa.obj      : ctoa.prg
+key.obj       : key.prg
+
+zOpenSch.obj  : zOpenSch.prg .\include\mon.ch
+error.obj     : error.prg
+c2mprog.obj   : c2mprog.prg
+mon_mike.obj  : mon_mike.prg
+
+alo_mess.obj  : alo_mess.prg
+alo_zab.obj   : alo_zab.prg
+alo_spr.obj   : alo_spr.prg
+al_card.obj   : al_card.prg
+alo_org.obj   : alo_org.prg
+rudn_lib.obj  : rudn_lib.prg
+tmpcreat.obj  : tmpcreat.prg
+baseprot.obj  : baseprot.prg
+basesrv2.obj  : basesrv2.prg
+
+pc_pos.obj   : pc_pos.PRG
+
+tools.obj    : tools.prg .\include\tools.ch
+getcheck.obj : getcheck.prg 
+baseinfo.obj : baseinfo.prg
+dcgn.obj     : dcgn.prg
+dates.obj    : dates.prg
+common.obj   : common.prg .\include\tools.ch
+///////////////  Tmv
+mon_conv.obj : mon_conv.prg
+///////////////
+
+mon.EXE  :     mon.obj      \
+                            \
+               pc_pos.obj   \
+                            \
+               baseaccn.obj \
+               baseclie.obj \
+               basesums.obj \
+               baseconf.obj \
+               basewisc.obj \
+               basevidu.obj \
+               baseordt.obj \
+               basecard.obj \
+               basetrst.obj \
+               basemodm.obj \
+               basecred.obj \
+               baseserv.obj \
+               basepetc.obj \
+               basepaym.obj \
+               baseogsz.obj \
+               basetick.obj \
+               sumsstrn.obj \
+               cardpaym.obj \
+                            \
+               basechck.obj \
+                            \
+               penshome.obj \
+               pensgive.obj \
+               pens_lib.obj \
+               tempPrep.obj \
+                            \
+               kassoper.obj \
+                            \
+               foot_brw.obj \
+               browse.obj   \
+               browseUp.obj \
+               ctoa.obj     \
+               key.obj      \
+               mon_mike.obj \
+               c2mprog.obj \
+                            \
+               zOpenSch.obj \
+               error.obj    \
+                            \
+               alo_mess.obj \
+               alo_zab.obj  \
+               alo_spr.obj  \
+               al_card.obj  \
+               alo_org.obj  \
+               rudn_lib.obj \
+               tmpcreat.obj \
+               baseprot.obj \
+               tools.obj \
+               getcheck.obj \
+               baseinfo.obj \
+               dcgn.obj \
+               dates.obj \
+               basesrv2.obj \
+               common.obj \
+           mon_conv.obj
+               set obj=.\obj
+               blinker @linkfile.lnk  >mon.pre

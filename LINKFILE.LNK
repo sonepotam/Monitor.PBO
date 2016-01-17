@@ -1,0 +1,87 @@
+file mon
+
+file pc_pos
+
+file baseaccn
+file baseclie
+file baseconf
+file basesums
+file baseordt
+file basewisc
+file basevidu
+file basecard
+file basetrst
+file basemodm
+file basecred
+file baseserv
+file basepetc
+file basepaym
+file baseogsz
+file basetick
+file sumsstrn
+file cardpaym
+
+file basechck
+file baseprot
+
+file penshome
+file pensgive
+file pens_lib
+
+file tempPrep
+
+file kassoper
+
+file foot_brw
+file browse
+file browseUp
+
+file tmpCreat
+
+file ctoa
+file zOpenSch
+#file error
+file key
+
+file c2mprog
+file mon_mike
+
+#file __dbflis
+file dosIdle
+#file dosIdle2
+
+file alo_mess
+file alo_zab
+file alo_spr
+#file alo_strn
+#file al_card
+file alo_org
+file rudn_lib
+file basesrv2
+file mon_conv
+
+file tools.obj
+file getcheck.obj
+file baseinfo.obj
+file dcgn.obj
+file dates.obj
+file common.obj
+
+lib cl2.lib
+lib viderecl.lib
+
+LIB od_inter.lib
+LIB viewer.lib
+LIB fisk.lib
+LIB encode.lib
+
+LIB ct250.lib
+
+blinker clipper page on
+blinker incremental off
+blinker memory pack 10
+blinker message duplicates
+
+output mon.exe
+@cl520mid.lnk
+nobell
